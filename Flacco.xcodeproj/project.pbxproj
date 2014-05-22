@@ -21,6 +21,7 @@
 		68B2C41A192DF9D700EC1F85 /* FlaccoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B2C419192DF9D700EC1F85 /* FlaccoTests.m */; };
 		68B2C426192DFAF800EC1F85 /* FLCTimelineTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B2C424192DFAF800EC1F85 /* FLCTimelineTableViewController.m */; };
 		68B2C427192DFAF800EC1F85 /* FLCTimelineTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68B2C425192DFAF800EC1F85 /* FLCTimelineTableViewController.xib */; };
+		68B2C42C192E243100EC1F85 /* GSColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B2C42B192E243100EC1F85 /* GSColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		68B2C423192DFAF800EC1F85 /* FLCTimelineTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FLCTimelineTableViewController.h; path = ViewControllers/FLCTimelineTableViewController.h; sourceTree = "<group>"; };
 		68B2C424192DFAF800EC1F85 /* FLCTimelineTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FLCTimelineTableViewController.m; path = ViewControllers/FLCTimelineTableViewController.m; sourceTree = "<group>"; };
 		68B2C425192DFAF800EC1F85 /* FLCTimelineTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FLCTimelineTableViewController.xib; path = ViewControllers/FLCTimelineTableViewController.xib; sourceTree = "<group>"; };
+		68B2C42A192E243100EC1F85 /* GSColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSColor.h; path = Helpers/GSColor.h; sourceTree = "<group>"; };
+		68B2C42B192E243100EC1F85 /* GSColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSColor.m; path = Helpers/GSColor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,7 @@
 			children = (
 				68B2C403192DF9D700EC1F85 /* FLCAppDelegate.h */,
 				68B2C404192DF9D700EC1F85 /* FLCAppDelegate.m */,
+				68B2C429192E241000EC1F85 /* Helpers */,
 				68B2C428192DFAFE00EC1F85 /* Timeline */,
 				68B2C406192DF9D700EC1F85 /* Images.xcassets */,
 				68B2C3FB192DF9D700EC1F85 /* Supporting Files */,
@@ -158,6 +162,15 @@
 				68B2C425192DFAF800EC1F85 /* FLCTimelineTableViewController.xib */,
 			);
 			name = Timeline;
+			sourceTree = "<group>";
+		};
+		68B2C429192E241000EC1F85 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				68B2C42A192E243100EC1F85 /* GSColor.h */,
+				68B2C42B192E243100EC1F85 /* GSColor.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68B2C405192DF9D700EC1F85 /* FLCAppDelegate.m in Sources */,
+				68B2C42C192E243100EC1F85 /* GSColor.m in Sources */,
 				68B2C401192DF9D700EC1F85 /* main.m in Sources */,
 				68B2C426192DFAF800EC1F85 /* FLCTimelineTableViewController.m in Sources */,
 			);

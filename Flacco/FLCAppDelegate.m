@@ -8,11 +8,18 @@
 
 #import "FLCAppDelegate.h"
 #import "FLCTimelineTableViewController.h"
+#import "GSColor.h"
 
 @implementation FLCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // Style the navBar
+    [UINavigationBar appearance].barTintColor = [GSColor darkPurple];
+    [UINavigationBar appearance].tintColor = [UIColor whiteColor];
+    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, nil]];
+    
+    // Launch the app
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     FLCTimelineTableViewController* timeline = [[FLCTimelineTableViewController alloc] init];
