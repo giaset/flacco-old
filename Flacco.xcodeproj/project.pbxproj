@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		68B2C3F5192DF9D700EC1F85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B2C3F4192DF9D700EC1F85 /* Foundation.framework */; };
+		68B2C3F7192DF9D700EC1F85 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B2C3F6192DF9D700EC1F85 /* CoreGraphics.framework */; };
+		68B2C3F9192DF9D700EC1F85 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B2C3F8192DF9D700EC1F85 /* UIKit.framework */; };
+		68B2C3FF192DF9D700EC1F85 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68B2C3FD192DF9D700EC1F85 /* InfoPlist.strings */; };
+		68B2C401192DF9D700EC1F85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B2C400192DF9D700EC1F85 /* main.m */; };
+		68B2C405192DF9D700EC1F85 /* FLCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B2C404192DF9D700EC1F85 /* FLCAppDelegate.m */; };
+		68B2C407192DF9D700EC1F85 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68B2C406192DF9D700EC1F85 /* Images.xcassets */; };
+		68B2C40E192DF9D700EC1F85 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B2C40D192DF9D700EC1F85 /* XCTest.framework */; };
+		68B2C40F192DF9D700EC1F85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B2C3F4192DF9D700EC1F85 /* Foundation.framework */; };
+		68B2C410192DF9D700EC1F85 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B2C3F8192DF9D700EC1F85 /* UIKit.framework */; };
+		68B2C418192DF9D700EC1F85 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68B2C416192DF9D700EC1F85 /* InfoPlist.strings */; };
+		68B2C41A192DF9D700EC1F85 /* FlaccoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B2C419192DF9D700EC1F85 /* FlaccoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		68B2C411192DF9D700EC1F85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68B2C3E9192DF9D700EC1F85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68B2C3F0192DF9D700EC1F85;
+			remoteInfo = Flacco;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		68B2C3F1192DF9D700EC1F85 /* Flacco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flacco.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68B2C3F4192DF9D700EC1F85 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		68B2C3F6192DF9D700EC1F85 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		68B2C3F8192DF9D700EC1F85 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		68B2C3FC192DF9D700EC1F85 /* Flacco-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Flacco-Info.plist"; sourceTree = "<group>"; };
+		68B2C3FE192DF9D700EC1F85 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		68B2C400192DF9D700EC1F85 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		68B2C402192DF9D700EC1F85 /* Flacco-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Flacco-Prefix.pch"; sourceTree = "<group>"; };
+		68B2C403192DF9D700EC1F85 /* FLCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLCAppDelegate.h; sourceTree = "<group>"; };
+		68B2C404192DF9D700EC1F85 /* FLCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLCAppDelegate.m; sourceTree = "<group>"; };
+		68B2C406192DF9D700EC1F85 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		68B2C40C192DF9D700EC1F85 /* FlaccoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlaccoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68B2C40D192DF9D700EC1F85 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		68B2C415192DF9D700EC1F85 /* FlaccoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlaccoTests-Info.plist"; sourceTree = "<group>"; };
+		68B2C417192DF9D700EC1F85 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		68B2C419192DF9D700EC1F85 /* FlaccoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlaccoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68B2C3EE192DF9D700EC1F85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68B2C3F7192DF9D700EC1F85 /* CoreGraphics.framework in Frameworks */,
+				68B2C3F9192DF9D700EC1F85 /* UIKit.framework in Frameworks */,
+				68B2C3F5192DF9D700EC1F85 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68B2C409192DF9D700EC1F85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68B2C40E192DF9D700EC1F85 /* XCTest.framework in Frameworks */,
+				68B2C410192DF9D700EC1F85 /* UIKit.framework in Frameworks */,
+				68B2C40F192DF9D700EC1F85 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68B2C3E8192DF9D700EC1F85 = {
+			isa = PBXGroup;
+			children = (
+				68B2C3FA192DF9D700EC1F85 /* Flacco */,
+				68B2C413192DF9D700EC1F85 /* FlaccoTests */,
+				68B2C3F3192DF9D700EC1F85 /* Frameworks */,
+				68B2C3F2192DF9D700EC1F85 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		68B2C3F2192DF9D700EC1F85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68B2C3F1192DF9D700EC1F85 /* Flacco.app */,
+				68B2C40C192DF9D700EC1F85 /* FlaccoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68B2C3F3192DF9D700EC1F85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68B2C3F4192DF9D700EC1F85 /* Foundation.framework */,
+				68B2C3F6192DF9D700EC1F85 /* CoreGraphics.framework */,
+				68B2C3F8192DF9D700EC1F85 /* UIKit.framework */,
+				68B2C40D192DF9D700EC1F85 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68B2C3FA192DF9D700EC1F85 /* Flacco */ = {
+			isa = PBXGroup;
+			children = (
+				68B2C403192DF9D700EC1F85 /* FLCAppDelegate.h */,
+				68B2C404192DF9D700EC1F85 /* FLCAppDelegate.m */,
+				68B2C406192DF9D700EC1F85 /* Images.xcassets */,
+				68B2C3FB192DF9D700EC1F85 /* Supporting Files */,
+			);
+			path = Flacco;
+			sourceTree = "<group>";
+		};
+		68B2C3FB192DF9D700EC1F85 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				68B2C3FC192DF9D700EC1F85 /* Flacco-Info.plist */,
+				68B2C3FD192DF9D700EC1F85 /* InfoPlist.strings */,
+				68B2C400192DF9D700EC1F85 /* main.m */,
+				68B2C402192DF9D700EC1F85 /* Flacco-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		68B2C413192DF9D700EC1F85 /* FlaccoTests */ = {
+			isa = PBXGroup;
+			children = (
+				68B2C419192DF9D700EC1F85 /* FlaccoTests.m */,
+				68B2C414192DF9D700EC1F85 /* Supporting Files */,
+			);
+			path = FlaccoTests;
+			sourceTree = "<group>";
+		};
+		68B2C414192DF9D700EC1F85 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				68B2C415192DF9D700EC1F85 /* FlaccoTests-Info.plist */,
+				68B2C416192DF9D700EC1F85 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68B2C3F0192DF9D700EC1F85 /* Flacco */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68B2C41D192DF9D700EC1F85 /* Build configuration list for PBXNativeTarget "Flacco" */;
+			buildPhases = (
+				68B2C3ED192DF9D700EC1F85 /* Sources */,
+				68B2C3EE192DF9D700EC1F85 /* Frameworks */,
+				68B2C3EF192DF9D700EC1F85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Flacco;
+			productName = Flacco;
+			productReference = 68B2C3F1192DF9D700EC1F85 /* Flacco.app */;
+			productType = "com.apple.product-type.application";
+		};
+		68B2C40B192DF9D700EC1F85 /* FlaccoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68B2C420192DF9D700EC1F85 /* Build configuration list for PBXNativeTarget "FlaccoTests" */;
+			buildPhases = (
+				68B2C408192DF9D700EC1F85 /* Sources */,
+				68B2C409192DF9D700EC1F85 /* Frameworks */,
+				68B2C40A192DF9D700EC1F85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68B2C412192DF9D700EC1F85 /* PBXTargetDependency */,
+			);
+			name = FlaccoTests;
+			productName = FlaccoTests;
+			productReference = 68B2C40C192DF9D700EC1F85 /* FlaccoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68B2C3E9192DF9D700EC1F85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FLC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Milton and Parc";
+				TargetAttributes = {
+					68B2C40B192DF9D700EC1F85 = {
+						TestTargetID = 68B2C3F0192DF9D700EC1F85;
+					};
+				};
+			};
+			buildConfigurationList = 68B2C3EC192DF9D700EC1F85 /* Build configuration list for PBXProject "Flacco" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 68B2C3E8192DF9D700EC1F85;
+			productRefGroup = 68B2C3F2192DF9D700EC1F85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68B2C3F0192DF9D700EC1F85 /* Flacco */,
+				68B2C40B192DF9D700EC1F85 /* FlaccoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68B2C3EF192DF9D700EC1F85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68B2C3FF192DF9D700EC1F85 /* InfoPlist.strings in Resources */,
+				68B2C407192DF9D700EC1F85 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68B2C40A192DF9D700EC1F85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68B2C418192DF9D700EC1F85 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68B2C3ED192DF9D700EC1F85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68B2C405192DF9D700EC1F85 /* FLCAppDelegate.m in Sources */,
+				68B2C401192DF9D700EC1F85 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68B2C408192DF9D700EC1F85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68B2C41A192DF9D700EC1F85 /* FlaccoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		68B2C412192DF9D700EC1F85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68B2C3F0192DF9D700EC1F85 /* Flacco */;
+			targetProxy = 68B2C411192DF9D700EC1F85 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		68B2C3FD192DF9D700EC1F85 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68B2C3FE192DF9D700EC1F85 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		68B2C416192DF9D700EC1F85 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68B2C417192DF9D700EC1F85 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		68B2C41B192DF9D700EC1F85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		68B2C41C192DF9D700EC1F85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68B2C41E192DF9D700EC1F85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Flacco/Flacco-Prefix.pch";
+				INFOPLIST_FILE = "Flacco/Flacco-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		68B2C41F192DF9D700EC1F85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Flacco/Flacco-Prefix.pch";
+				INFOPLIST_FILE = "Flacco/Flacco-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		68B2C421192DF9D700EC1F85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Flacco.app/Flacco";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Flacco/Flacco-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FlaccoTests/FlaccoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		68B2C422192DF9D700EC1F85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Flacco.app/Flacco";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Flacco/Flacco-Prefix.pch";
+				INFOPLIST_FILE = "FlaccoTests/FlaccoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68B2C3EC192DF9D700EC1F85 /* Build configuration list for PBXProject "Flacco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68B2C41B192DF9D700EC1F85 /* Debug */,
+				68B2C41C192DF9D700EC1F85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68B2C41D192DF9D700EC1F85 /* Build configuration list for PBXNativeTarget "Flacco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68B2C41E192DF9D700EC1F85 /* Debug */,
+				68B2C41F192DF9D700EC1F85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		68B2C420192DF9D700EC1F85 /* Build configuration list for PBXNativeTarget "FlaccoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68B2C421192DF9D700EC1F85 /* Debug */,
+				68B2C422192DF9D700EC1F85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68B2C3E9192DF9D700EC1F85 /* Project object */;
+}
