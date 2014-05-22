@@ -18,7 +18,7 @@
 {
     self = [super initWithNibName:@"FLCTimelineTableViewController" bundle:nil];
     if (self) {
-        // do init shit here
+        self.title = @"Flacco";
     }
     return self;
 }
@@ -26,8 +26,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.title = @"Flacco";
     
     // Set up rightBarButton to launch camera
     UIBarButtonItem* addMealButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addMealButtonClicked)];
