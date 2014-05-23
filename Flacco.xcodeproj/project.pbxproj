@@ -1,499 +1,1179 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		68950449192F5B65007AFD75 /* Exo2-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 68950448192F5B65007AFD75 /* Exo2-Regular.otf */; };
-		68B2C3F5192DF9D700EC1F85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B2C3F4192DF9D700EC1F85 /* Foundation.framework */; };
-		68B2C3F7192DF9D700EC1F85 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B2C3F6192DF9D700EC1F85 /* CoreGraphics.framework */; };
-		68B2C3F9192DF9D700EC1F85 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B2C3F8192DF9D700EC1F85 /* UIKit.framework */; };
-		68B2C3FF192DF9D700EC1F85 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68B2C3FD192DF9D700EC1F85 /* InfoPlist.strings */; };
-		68B2C401192DF9D700EC1F85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B2C400192DF9D700EC1F85 /* main.m */; };
-		68B2C405192DF9D700EC1F85 /* FLCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B2C404192DF9D700EC1F85 /* FLCAppDelegate.m */; };
-		68B2C407192DF9D700EC1F85 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68B2C406192DF9D700EC1F85 /* Images.xcassets */; };
-		68B2C40E192DF9D700EC1F85 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B2C40D192DF9D700EC1F85 /* XCTest.framework */; };
-		68B2C40F192DF9D700EC1F85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B2C3F4192DF9D700EC1F85 /* Foundation.framework */; };
-		68B2C410192DF9D700EC1F85 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B2C3F8192DF9D700EC1F85 /* UIKit.framework */; };
-		68B2C418192DF9D700EC1F85 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68B2C416192DF9D700EC1F85 /* InfoPlist.strings */; };
-		68B2C41A192DF9D700EC1F85 /* FlaccoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B2C419192DF9D700EC1F85 /* FlaccoTests.m */; };
-		68B2C426192DFAF800EC1F85 /* FLCTimelineTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B2C424192DFAF800EC1F85 /* FLCTimelineTableViewController.m */; };
-		68B2C427192DFAF800EC1F85 /* FLCTimelineTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68B2C425192DFAF800EC1F85 /* FLCTimelineTableViewController.xib */; };
-		68B2C42C192E243100EC1F85 /* GSColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B2C42B192E243100EC1F85 /* GSColor.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		68B2C411192DF9D700EC1F85 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 68B2C3E9192DF9D700EC1F85 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 68B2C3F0192DF9D700EC1F85;
-			remoteInfo = Flacco;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		68950448192F5B65007AFD75 /* Exo2-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-Regular.otf"; sourceTree = "<group>"; };
-		68B2C3F1192DF9D700EC1F85 /* Flacco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flacco.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		68B2C3F4192DF9D700EC1F85 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		68B2C3F6192DF9D700EC1F85 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		68B2C3F8192DF9D700EC1F85 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		68B2C3FC192DF9D700EC1F85 /* Flacco-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Flacco-Info.plist"; sourceTree = "<group>"; };
-		68B2C3FE192DF9D700EC1F85 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		68B2C400192DF9D700EC1F85 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		68B2C402192DF9D700EC1F85 /* Flacco-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Flacco-Prefix.pch"; sourceTree = "<group>"; };
-		68B2C403192DF9D700EC1F85 /* FLCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLCAppDelegate.h; sourceTree = "<group>"; };
-		68B2C404192DF9D700EC1F85 /* FLCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLCAppDelegate.m; sourceTree = "<group>"; };
-		68B2C406192DF9D700EC1F85 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		68B2C40C192DF9D700EC1F85 /* FlaccoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlaccoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		68B2C40D192DF9D700EC1F85 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		68B2C415192DF9D700EC1F85 /* FlaccoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlaccoTests-Info.plist"; sourceTree = "<group>"; };
-		68B2C417192DF9D700EC1F85 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		68B2C419192DF9D700EC1F85 /* FlaccoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlaccoTests.m; sourceTree = "<group>"; };
-		68B2C423192DFAF800EC1F85 /* FLCTimelineTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FLCTimelineTableViewController.h; path = ViewControllers/FLCTimelineTableViewController.h; sourceTree = "<group>"; };
-		68B2C424192DFAF800EC1F85 /* FLCTimelineTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FLCTimelineTableViewController.m; path = ViewControllers/FLCTimelineTableViewController.m; sourceTree = "<group>"; };
-		68B2C425192DFAF800EC1F85 /* FLCTimelineTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FLCTimelineTableViewController.xib; path = ViewControllers/FLCTimelineTableViewController.xib; sourceTree = "<group>"; };
-		68B2C42A192E243100EC1F85 /* GSColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSColor.h; path = Helpers/GSColor.h; sourceTree = "<group>"; };
-		68B2C42B192E243100EC1F85 /* GSColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSColor.m; path = Helpers/GSColor.m; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		68B2C3EE192DF9D700EC1F85 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				68B2C3F7192DF9D700EC1F85 /* CoreGraphics.framework in Frameworks */,
-				68B2C3F9192DF9D700EC1F85 /* UIKit.framework in Frameworks */,
-				68B2C3F5192DF9D700EC1F85 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		68B2C409192DF9D700EC1F85 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				68B2C40E192DF9D700EC1F85 /* XCTest.framework in Frameworks */,
-				68B2C410192DF9D700EC1F85 /* UIKit.framework in Frameworks */,
-				68B2C40F192DF9D700EC1F85 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		68950447192F5B28007AFD75 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				68950448192F5B65007AFD75 /* Exo2-Regular.otf */,
-			);
-			name = Fonts;
-			sourceTree = "<group>";
-		};
-		68B2C3E8192DF9D700EC1F85 = {
-			isa = PBXGroup;
-			children = (
-				68B2C3FA192DF9D700EC1F85 /* Flacco */,
-				68B2C413192DF9D700EC1F85 /* FlaccoTests */,
-				68B2C3F3192DF9D700EC1F85 /* Frameworks */,
-				68B2C3F2192DF9D700EC1F85 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		68B2C3F2192DF9D700EC1F85 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				68B2C3F1192DF9D700EC1F85 /* Flacco.app */,
-				68B2C40C192DF9D700EC1F85 /* FlaccoTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		68B2C3F3192DF9D700EC1F85 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				68B2C3F4192DF9D700EC1F85 /* Foundation.framework */,
-				68B2C3F6192DF9D700EC1F85 /* CoreGraphics.framework */,
-				68B2C3F8192DF9D700EC1F85 /* UIKit.framework */,
-				68B2C40D192DF9D700EC1F85 /* XCTest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		68B2C3FA192DF9D700EC1F85 /* Flacco */ = {
-			isa = PBXGroup;
-			children = (
-				68B2C403192DF9D700EC1F85 /* FLCAppDelegate.h */,
-				68B2C404192DF9D700EC1F85 /* FLCAppDelegate.m */,
-				68950447192F5B28007AFD75 /* Fonts */,
-				68B2C429192E241000EC1F85 /* Helpers */,
-				68B2C428192DFAFE00EC1F85 /* Timeline */,
-				68B2C406192DF9D700EC1F85 /* Images.xcassets */,
-				68B2C3FB192DF9D700EC1F85 /* Supporting Files */,
-			);
-			path = Flacco;
-			sourceTree = "<group>";
-		};
-		68B2C3FB192DF9D700EC1F85 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				68B2C3FC192DF9D700EC1F85 /* Flacco-Info.plist */,
-				68B2C3FD192DF9D700EC1F85 /* InfoPlist.strings */,
-				68B2C400192DF9D700EC1F85 /* main.m */,
-				68B2C402192DF9D700EC1F85 /* Flacco-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		68B2C413192DF9D700EC1F85 /* FlaccoTests */ = {
-			isa = PBXGroup;
-			children = (
-				68B2C419192DF9D700EC1F85 /* FlaccoTests.m */,
-				68B2C414192DF9D700EC1F85 /* Supporting Files */,
-			);
-			path = FlaccoTests;
-			sourceTree = "<group>";
-		};
-		68B2C414192DF9D700EC1F85 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				68B2C415192DF9D700EC1F85 /* FlaccoTests-Info.plist */,
-				68B2C416192DF9D700EC1F85 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		68B2C428192DFAFE00EC1F85 /* Timeline */ = {
-			isa = PBXGroup;
-			children = (
-				68B2C423192DFAF800EC1F85 /* FLCTimelineTableViewController.h */,
-				68B2C424192DFAF800EC1F85 /* FLCTimelineTableViewController.m */,
-				68B2C425192DFAF800EC1F85 /* FLCTimelineTableViewController.xib */,
-			);
-			name = Timeline;
-			sourceTree = "<group>";
-		};
-		68B2C429192E241000EC1F85 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				68B2C42A192E243100EC1F85 /* GSColor.h */,
-				68B2C42B192E243100EC1F85 /* GSColor.m */,
-			);
-			name = Helpers;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		68B2C3F0192DF9D700EC1F85 /* Flacco */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 68B2C41D192DF9D700EC1F85 /* Build configuration list for PBXNativeTarget "Flacco" */;
-			buildPhases = (
-				68B2C3ED192DF9D700EC1F85 /* Sources */,
-				68B2C3EE192DF9D700EC1F85 /* Frameworks */,
-				68B2C3EF192DF9D700EC1F85 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Flacco;
-			productName = Flacco;
-			productReference = 68B2C3F1192DF9D700EC1F85 /* Flacco.app */;
-			productType = "com.apple.product-type.application";
-		};
-		68B2C40B192DF9D700EC1F85 /* FlaccoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 68B2C420192DF9D700EC1F85 /* Build configuration list for PBXNativeTarget "FlaccoTests" */;
-			buildPhases = (
-				68B2C408192DF9D700EC1F85 /* Sources */,
-				68B2C409192DF9D700EC1F85 /* Frameworks */,
-				68B2C40A192DF9D700EC1F85 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				68B2C412192DF9D700EC1F85 /* PBXTargetDependency */,
-			);
-			name = FlaccoTests;
-			productName = FlaccoTests;
-			productReference = 68B2C40C192DF9D700EC1F85 /* FlaccoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		68B2C3E9192DF9D700EC1F85 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = FLC;
-				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = "Milton and Parc";
-				TargetAttributes = {
-					68B2C40B192DF9D700EC1F85 = {
-						TestTargetID = 68B2C3F0192DF9D700EC1F85;
-					};
-				};
-			};
-			buildConfigurationList = 68B2C3EC192DF9D700EC1F85 /* Build configuration list for PBXProject "Flacco" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 68B2C3E8192DF9D700EC1F85;
-			productRefGroup = 68B2C3F2192DF9D700EC1F85 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				68B2C3F0192DF9D700EC1F85 /* Flacco */,
-				68B2C40B192DF9D700EC1F85 /* FlaccoTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		68B2C3EF192DF9D700EC1F85 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				68950449192F5B65007AFD75 /* Exo2-Regular.otf in Resources */,
-				68B2C3FF192DF9D700EC1F85 /* InfoPlist.strings in Resources */,
-				68B2C427192DFAF800EC1F85 /* FLCTimelineTableViewController.xib in Resources */,
-				68B2C407192DF9D700EC1F85 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		68B2C40A192DF9D700EC1F85 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				68B2C418192DF9D700EC1F85 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		68B2C3ED192DF9D700EC1F85 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				68B2C405192DF9D700EC1F85 /* FLCAppDelegate.m in Sources */,
-				68B2C42C192E243100EC1F85 /* GSColor.m in Sources */,
-				68B2C401192DF9D700EC1F85 /* main.m in Sources */,
-				68B2C426192DFAF800EC1F85 /* FLCTimelineTableViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		68B2C408192DF9D700EC1F85 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				68B2C41A192DF9D700EC1F85 /* FlaccoTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		68B2C412192DF9D700EC1F85 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 68B2C3F0192DF9D700EC1F85 /* Flacco */;
-			targetProxy = 68B2C411192DF9D700EC1F85 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		68B2C3FD192DF9D700EC1F85 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				68B2C3FE192DF9D700EC1F85 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		68B2C416192DF9D700EC1F85 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				68B2C417192DF9D700EC1F85 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		68B2C41B192DF9D700EC1F85 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		68B2C41C192DF9D700EC1F85 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		68B2C41E192DF9D700EC1F85 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Flacco/Flacco-Prefix.pch";
-				INFOPLIST_FILE = "Flacco/Flacco-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		68B2C41F192DF9D700EC1F85 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Flacco/Flacco-Prefix.pch";
-				INFOPLIST_FILE = "Flacco/Flacco-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		68B2C421192DF9D700EC1F85 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Flacco.app/Flacco";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Flacco/Flacco-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "FlaccoTests/FlaccoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		68B2C422192DF9D700EC1F85 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Flacco.app/Flacco";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Flacco/Flacco-Prefix.pch";
-				INFOPLIST_FILE = "FlaccoTests/FlaccoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		68B2C3EC192DF9D700EC1F85 /* Build configuration list for PBXProject "Flacco" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				68B2C41B192DF9D700EC1F85 /* Debug */,
-				68B2C41C192DF9D700EC1F85 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		68B2C41D192DF9D700EC1F85 /* Build configuration list for PBXNativeTarget "Flacco" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				68B2C41E192DF9D700EC1F85 /* Debug */,
-				68B2C41F192DF9D700EC1F85 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		68B2C420192DF9D700EC1F85 /* Build configuration list for PBXNativeTarget "FlaccoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				68B2C421192DF9D700EC1F85 /* Debug */,
-				68B2C422192DF9D700EC1F85 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 68B2C3E9192DF9D700EC1F85 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>07E0E765EB034E2CA1AC27CB</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-Flacco-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>12771A352FF840B7B7FC132B</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-Flacco.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>4A35FE876CF8468D861E77F3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>12771A352FF840B7B7FC132B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>68950447192F5B28007AFD75</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>68950448192F5B65007AFD75</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Fonts</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68950448192F5B65007AFD75</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file</string>
+			<key>path</key>
+			<string>Exo2-Regular.otf</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68950449192F5B65007AFD75</key>
+		<dict>
+			<key>fileRef</key>
+			<string>68950448192F5B65007AFD75</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>68B2C3E8192DF9D700EC1F85</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>68B2C3FA192DF9D700EC1F85</string>
+				<string>68B2C413192DF9D700EC1F85</string>
+				<string>68B2C3F3192DF9D700EC1F85</string>
+				<string>68B2C3F2192DF9D700EC1F85</string>
+				<string>C555FFDB4F0C4B958121E805</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68B2C3E9192DF9D700EC1F85</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>FLC</string>
+				<key>LastUpgradeCheck</key>
+				<string>0510</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Milton and Parc</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>68B2C40B192DF9D700EC1F85</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>68B2C3F0192DF9D700EC1F85</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>68B2C3EC192DF9D700EC1F85</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>68B2C3E8192DF9D700EC1F85</string>
+			<key>productRefGroup</key>
+			<string>68B2C3F2192DF9D700EC1F85</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>68B2C3F0192DF9D700EC1F85</string>
+				<string>68B2C40B192DF9D700EC1F85</string>
+			</array>
+		</dict>
+		<key>68B2C3EC192DF9D700EC1F85</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>68B2C41B192DF9D700EC1F85</string>
+				<string>68B2C41C192DF9D700EC1F85</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>68B2C3ED192DF9D700EC1F85</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>68B2C405192DF9D700EC1F85</string>
+				<string>68B2C42C192E243100EC1F85</string>
+				<string>68B2C401192DF9D700EC1F85</string>
+				<string>68B2C426192DFAF800EC1F85</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>68B2C3EE192DF9D700EC1F85</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>68B2C3F7192DF9D700EC1F85</string>
+				<string>68B2C3F9192DF9D700EC1F85</string>
+				<string>68B2C3F5192DF9D700EC1F85</string>
+				<string>4A35FE876CF8468D861E77F3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>68B2C3EF192DF9D700EC1F85</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>68950449192F5B65007AFD75</string>
+				<string>68B2C3FF192DF9D700EC1F85</string>
+				<string>68B2C427192DFAF800EC1F85</string>
+				<string>68B2C407192DF9D700EC1F85</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>68B2C3F0192DF9D700EC1F85</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>68B2C41D192DF9D700EC1F85</string>
+			<key>buildPhases</key>
+			<array>
+				<string>CC993FA20A5845659E6DB519</string>
+				<string>68B2C3ED192DF9D700EC1F85</string>
+				<string>68B2C3EE192DF9D700EC1F85</string>
+				<string>68B2C3EF192DF9D700EC1F85</string>
+				<string>07E0E765EB034E2CA1AC27CB</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Flacco</string>
+			<key>productName</key>
+			<string>Flacco</string>
+			<key>productReference</key>
+			<string>68B2C3F1192DF9D700EC1F85</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>68B2C3F1192DF9D700EC1F85</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Flacco.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>68B2C3F2192DF9D700EC1F85</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>68B2C3F1192DF9D700EC1F85</string>
+				<string>68B2C40C192DF9D700EC1F85</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68B2C3F3192DF9D700EC1F85</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>68B2C3F4192DF9D700EC1F85</string>
+				<string>68B2C3F6192DF9D700EC1F85</string>
+				<string>68B2C3F8192DF9D700EC1F85</string>
+				<string>68B2C40D192DF9D700EC1F85</string>
+				<string>12771A352FF840B7B7FC132B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68B2C3F4192DF9D700EC1F85</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>68B2C3F5192DF9D700EC1F85</key>
+		<dict>
+			<key>fileRef</key>
+			<string>68B2C3F4192DF9D700EC1F85</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>68B2C3F6192DF9D700EC1F85</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>68B2C3F7192DF9D700EC1F85</key>
+		<dict>
+			<key>fileRef</key>
+			<string>68B2C3F6192DF9D700EC1F85</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>68B2C3F8192DF9D700EC1F85</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>68B2C3F9192DF9D700EC1F85</key>
+		<dict>
+			<key>fileRef</key>
+			<string>68B2C3F8192DF9D700EC1F85</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>68B2C3FA192DF9D700EC1F85</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>68B2C403192DF9D700EC1F85</string>
+				<string>68B2C404192DF9D700EC1F85</string>
+				<string>68950447192F5B28007AFD75</string>
+				<string>68B2C429192E241000EC1F85</string>
+				<string>68B2C428192DFAFE00EC1F85</string>
+				<string>68B2C406192DF9D700EC1F85</string>
+				<string>68B2C3FB192DF9D700EC1F85</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Flacco</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68B2C3FB192DF9D700EC1F85</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>68B2C3FC192DF9D700EC1F85</string>
+				<string>68B2C3FD192DF9D700EC1F85</string>
+				<string>68B2C400192DF9D700EC1F85</string>
+				<string>68B2C402192DF9D700EC1F85</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68B2C3FC192DF9D700EC1F85</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Flacco-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68B2C3FD192DF9D700EC1F85</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>68B2C3FE192DF9D700EC1F85</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68B2C3FE192DF9D700EC1F85</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68B2C3FF192DF9D700EC1F85</key>
+		<dict>
+			<key>fileRef</key>
+			<string>68B2C3FD192DF9D700EC1F85</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>68B2C400192DF9D700EC1F85</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68B2C401192DF9D700EC1F85</key>
+		<dict>
+			<key>fileRef</key>
+			<string>68B2C400192DF9D700EC1F85</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>68B2C402192DF9D700EC1F85</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Flacco-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68B2C403192DF9D700EC1F85</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FLCAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68B2C404192DF9D700EC1F85</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FLCAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68B2C405192DF9D700EC1F85</key>
+		<dict>
+			<key>fileRef</key>
+			<string>68B2C404192DF9D700EC1F85</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>68B2C406192DF9D700EC1F85</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68B2C407192DF9D700EC1F85</key>
+		<dict>
+			<key>fileRef</key>
+			<string>68B2C406192DF9D700EC1F85</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>68B2C408192DF9D700EC1F85</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>68B2C41A192DF9D700EC1F85</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>68B2C409192DF9D700EC1F85</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>68B2C40E192DF9D700EC1F85</string>
+				<string>68B2C410192DF9D700EC1F85</string>
+				<string>68B2C40F192DF9D700EC1F85</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>68B2C40A192DF9D700EC1F85</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>68B2C418192DF9D700EC1F85</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>68B2C40B192DF9D700EC1F85</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>68B2C420192DF9D700EC1F85</string>
+			<key>buildPhases</key>
+			<array>
+				<string>68B2C408192DF9D700EC1F85</string>
+				<string>68B2C409192DF9D700EC1F85</string>
+				<string>68B2C40A192DF9D700EC1F85</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>68B2C412192DF9D700EC1F85</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>FlaccoTests</string>
+			<key>productName</key>
+			<string>FlaccoTests</string>
+			<key>productReference</key>
+			<string>68B2C40C192DF9D700EC1F85</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>68B2C40C192DF9D700EC1F85</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>FlaccoTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>68B2C40D192DF9D700EC1F85</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>68B2C40E192DF9D700EC1F85</key>
+		<dict>
+			<key>fileRef</key>
+			<string>68B2C40D192DF9D700EC1F85</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>68B2C40F192DF9D700EC1F85</key>
+		<dict>
+			<key>fileRef</key>
+			<string>68B2C3F4192DF9D700EC1F85</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>68B2C410192DF9D700EC1F85</key>
+		<dict>
+			<key>fileRef</key>
+			<string>68B2C3F8192DF9D700EC1F85</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>68B2C411192DF9D700EC1F85</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>68B2C3E9192DF9D700EC1F85</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>68B2C3F0192DF9D700EC1F85</string>
+			<key>remoteInfo</key>
+			<string>Flacco</string>
+		</dict>
+		<key>68B2C412192DF9D700EC1F85</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>68B2C3F0192DF9D700EC1F85</string>
+			<key>targetProxy</key>
+			<string>68B2C411192DF9D700EC1F85</string>
+		</dict>
+		<key>68B2C413192DF9D700EC1F85</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>68B2C419192DF9D700EC1F85</string>
+				<string>68B2C414192DF9D700EC1F85</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>FlaccoTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68B2C414192DF9D700EC1F85</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>68B2C415192DF9D700EC1F85</string>
+				<string>68B2C416192DF9D700EC1F85</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68B2C415192DF9D700EC1F85</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>FlaccoTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68B2C416192DF9D700EC1F85</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>68B2C417192DF9D700EC1F85</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68B2C417192DF9D700EC1F85</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68B2C418192DF9D700EC1F85</key>
+		<dict>
+			<key>fileRef</key>
+			<string>68B2C416192DF9D700EC1F85</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>68B2C419192DF9D700EC1F85</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FlaccoTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68B2C41A192DF9D700EC1F85</key>
+		<dict>
+			<key>fileRef</key>
+			<string>68B2C419192DF9D700EC1F85</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>68B2C41B192DF9D700EC1F85</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>68B2C41C192DF9D700EC1F85</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>68B2C41D192DF9D700EC1F85</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>68B2C41E192DF9D700EC1F85</string>
+				<string>68B2C41F192DF9D700EC1F85</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>68B2C41E192DF9D700EC1F85</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>C555FFDB4F0C4B958121E805</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Flacco/Flacco-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Flacco/Flacco-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>68B2C41F192DF9D700EC1F85</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>C555FFDB4F0C4B958121E805</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Flacco/Flacco-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Flacco/Flacco-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>68B2C420192DF9D700EC1F85</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>68B2C421192DF9D700EC1F85</string>
+				<string>68B2C422192DF9D700EC1F85</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>68B2C421192DF9D700EC1F85</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/Flacco.app/Flacco</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Flacco/Flacco-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>FlaccoTests/FlaccoTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>68B2C422192DF9D700EC1F85</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/Flacco.app/Flacco</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Flacco/Flacco-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>FlaccoTests/FlaccoTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>68B2C423192DFAF800EC1F85</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>FLCTimelineTableViewController.h</string>
+			<key>path</key>
+			<string>ViewControllers/FLCTimelineTableViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68B2C424192DFAF800EC1F85</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>FLCTimelineTableViewController.m</string>
+			<key>path</key>
+			<string>ViewControllers/FLCTimelineTableViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68B2C425192DFAF800EC1F85</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>name</key>
+			<string>FLCTimelineTableViewController.xib</string>
+			<key>path</key>
+			<string>ViewControllers/FLCTimelineTableViewController.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68B2C426192DFAF800EC1F85</key>
+		<dict>
+			<key>fileRef</key>
+			<string>68B2C424192DFAF800EC1F85</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>68B2C427192DFAF800EC1F85</key>
+		<dict>
+			<key>fileRef</key>
+			<string>68B2C425192DFAF800EC1F85</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>68B2C428192DFAFE00EC1F85</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>68B2C423192DFAF800EC1F85</string>
+				<string>68B2C424192DFAF800EC1F85</string>
+				<string>68B2C425192DFAF800EC1F85</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Timeline</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68B2C429192E241000EC1F85</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>68B2C42A192E243100EC1F85</string>
+				<string>68B2C42B192E243100EC1F85</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Helpers</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68B2C42A192E243100EC1F85</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>GSColor.h</string>
+			<key>path</key>
+			<string>Helpers/GSColor.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68B2C42B192E243100EC1F85</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>GSColor.m</string>
+			<key>path</key>
+			<string>Helpers/GSColor.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68B2C42C192E243100EC1F85</key>
+		<dict>
+			<key>fileRef</key>
+			<string>68B2C42B192E243100EC1F85</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C555FFDB4F0C4B958121E805</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-Flacco.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods-Flacco.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CC993FA20A5845659E6DB519</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>68B2C3E9192DF9D700EC1F85</string>
+</dict>
+</plist>
