@@ -35,7 +35,13 @@
     self.navigationItem.rightBarButtonItem = addMealButton;
     
     // Bind the disappearing navbar to user's scrolls
-    [self followScrollView:self.tableView withDelay:30];
+    [self followScrollView:self.tableView withDelay:20];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [self showNavBarAnimated:NO];
 }
 
 - (IBAction)addMealButtonClicked
@@ -62,6 +68,7 @@
     
     // Configure the cell...
     cell.textLabel.text = [NSString stringWithFormat:@"Cell number %d", indexPath.row];
+    cell.textLabel.font = [UIFont fontWithName:@"Exo2-Regular" size:18];
     
     return cell;
 }

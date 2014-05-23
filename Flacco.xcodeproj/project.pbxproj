@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		12771A352FF840B7B7FC132B /* libPods-Flacco.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Flacco.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		68950448192F5B65007AFD75 /* Exo2-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-Regular.otf"; sourceTree = "<group>"; };
+		68950448192F5B65007AFD75 /* Exo2-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Exo2-Regular.otf"; path = "Fonts/Exo2-Regular.otf"; sourceTree = "<group>"; };
 		68B2C3F1192DF9D700EC1F85 /* Flacco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flacco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68B2C3F4192DF9D700EC1F85 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		68B2C3F6192DF9D700EC1F85 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
