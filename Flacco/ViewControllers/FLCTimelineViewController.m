@@ -1,23 +1,25 @@
 //
-//  FLCTimelineTableViewController.m
+//  FLCTimelineViewController.m
 //  Flacco
 //
-//  Created by Gianni Settino on 2014-05-22.
+//  Created by Gianni Settino on 2014-05-23.
 //  Copyright (c) 2014 Milton and Parc. All rights reserved.
 //
 
-#import "FLCTimelineTableViewController.h"
+#import "FLCTimelineViewController.h"
 #import <UIViewController+ScrollingNavbar.h>
 
-@interface FLCTimelineTableViewController ()
+@interface FLCTimelineViewController ()
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
-@implementation FLCTimelineTableViewController
+@implementation FLCTimelineViewController
 
 - (id)init
 {
-    self = [super initWithNibName:@"FLCTimelineTableViewController" bundle:nil];
+    self = [super initWithNibName:@"FLCTimelineViewController" bundle:nil];
     if (self) {
         self.title = @"flacco";
     }
@@ -33,12 +35,12 @@
     self.navigationItem.rightBarButtonItem = addMealButton;
     
     // Bind the disappearing navbar to user's scrolls
-    [self followScrollView:self.tableView];
+    [self followScrollView:self.tableView withDelay:30];
 }
 
 - (IBAction)addMealButtonClicked
 {
-    
+    // launch camera
 }
 
 #pragma mark - Table view data source

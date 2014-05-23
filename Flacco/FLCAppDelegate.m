@@ -7,7 +7,7 @@
 //
 
 #import "FLCAppDelegate.h"
-#import "FLCTimelineTableViewController.h"
+#import "FLCTimelineViewController.h"
 #import "GSColor.h"
 
 @implementation FLCAppDelegate
@@ -22,7 +22,7 @@
     // Launch the app
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    FLCTimelineTableViewController* timeline = [[FLCTimelineTableViewController alloc] init];
+    FLCTimelineViewController* timeline = [[FLCTimelineViewController alloc] init];
     UINavigationController* rootNav = [[UINavigationController alloc] initWithRootViewController:timeline];
     rootNav.navigationBar.translucent = NO;
     
