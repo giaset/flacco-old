@@ -24,7 +24,7 @@
     
     FLCTimelineTableViewController* timeline = [[FLCTimelineTableViewController alloc] init];
     UINavigationController* rootNav = [[UINavigationController alloc] initWithRootViewController:timeline];
-    rootNav.navigationBar.translucent = YES;
+    rootNav.navigationBar.translucent = NO;
     
     self.window.rootViewController = rootNav;
     
