@@ -18,7 +18,7 @@
 {
     self = [super initWithNibName:@"FLCTimelineTableViewController" bundle:nil];
     if (self) {
-        self.title = @"Flacco";
+        self.title = @"flacco";
     }
     return self;
 }

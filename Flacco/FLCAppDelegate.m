@@ -17,14 +17,16 @@
     // Style the navBar
     [UINavigationBar appearance].barTintColor = [GSColor purple];
     [UINavigationBar appearance].tintColor = [UIColor whiteColor];
-    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, nil]];
+    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, [UIFont fontWithName:@"Exo2-Regular" size:26], NSFontAttributeName, nil]];
     
     // Launch the app
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     FLCTimelineTableViewController* timeline = [[FLCTimelineTableViewController alloc] init];
+    UINavigationController* rootNav = [[UINavigationController alloc] initWithRootViewController:timeline];
+    rootNav.navigationBar.translucent = YES;
     
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:timeline];
+    self.window.rootViewController = rootNav;
     
     [self.window makeKeyAndVisible];
     return YES;
