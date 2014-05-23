@@ -11,6 +11,5 @@
 @interface GSColor : NSObject
 
 + (UIColor*)purple;
-+ (UIColor*)darkPurple;
 
 @end

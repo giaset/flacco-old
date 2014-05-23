@@ -12,16 +12,8 @@
 
 + (UIColor*)purple
 {
-    // FLAT UI "AMETHYST" = #9b59b6
-    // rgb(155, 89, 182)
-    return [UIColor colorWithRed:0.608 green:0.349 blue:0.714 alpha:1];
-}
-
-+ (UIColor*)darkPurple
-{
-    // FLAT UI "WISTERIA" = #8e44ad
-    // rgb(142, 68, 173)
-    return [UIColor colorWithRed:0.557 green:0.267 blue:0.678 alpha:1];
+    // #2b025b
+    return [UIColor colorWithRed:0.169 green:0.008 blue:0.357 alpha:1];
 }
 
 @end
