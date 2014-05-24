@@ -7,6 +7,7 @@
 //
 
 #import "FLCCameraViewController.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface FLCCameraViewController ()
 
@@ -28,6 +29,28 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    /* Set up the capture session */
+    AVCaptureSession* captureSession = [[AVCaptureSession alloc] init];
+    captureSession.sessionPreset = AVCaptureSessionPresetPhoto;
+    
+    /* Set up the capture device */
+    AVCaptureDevice* device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    NSError* error = nil;
+    AVCaptureDeviceInput* input = [AVCaptureDeviceInput deviceInputWithDevice:device error:&error];
+    if (!input) {
+        // Handle the error appropriately
+    }
+    [captureSession addInput:input];
+    
+    /* Set up the preview layer */
+    CALayer* cameraViewLayer = self.cameraView.layer;
+    AVCaptureVideoPreviewLayer* captureVideoPreviewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:captureSession];
+    captureVideoPreviewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
+    captureVideoPreviewLayer.frame = self.cameraView.bounds;
+    [cameraViewLayer addSublayer:captureVideoPreviewLayer];
+    
+    [captureSession startRunning];
 }
 
 - (void)viewWillAppear:(BOOL)animated
