@@ -32,7 +32,7 @@
     [super viewDidLoad];
     
     // Set up rightBarButton to launch camera
-    UIBarButtonItem* addMealButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addMealButtonClicked)];
+    UIBarButtonItem* addMealButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:self action:@selector(addMealButtonClicked)];
     self.navigationItem.rightBarButtonItem = addMealButton;
     
     // Bind the disappearing navbar to user's scrolls
