@@ -48,7 +48,7 @@
 - (IBAction)addMealButtonClicked
 {
     FLCCameraViewController* cameraViewController = [[FLCCameraViewController alloc] init];
-    cameraViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    //cameraViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     [self presentViewController:cameraViewController animated:YES completion:nil];
 }
 

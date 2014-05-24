@@ -35,7 +35,7 @@
     [super viewWillAppear:animated];
     
     // Hide status bar after a slight delay to make it look nicer (0.35 for modal, 0.15 for crossfade)
-    double delayInSeconds = 0.15;
+    double delayInSeconds = 0.35;
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
         [[UIApplication sharedApplication] setStatusBarHidden:YES];
