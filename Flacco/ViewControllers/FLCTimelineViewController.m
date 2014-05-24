@@ -8,6 +8,7 @@
 
 #import "FLCTimelineViewController.h"
 #import <UIViewController+ScrollingNavbar.h>
+#import "FLCCameraViewController.h"
 
 @interface FLCTimelineViewController ()
 
@@ -46,7 +47,9 @@
 
 - (IBAction)addMealButtonClicked
 {
-    // launch camera
+    FLCCameraViewController* cameraViewController = [[FLCCameraViewController alloc] init];
+    cameraViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentViewController:cameraViewController animated:YES completion:nil];
 }
 
 #pragma mark - Table view data source
