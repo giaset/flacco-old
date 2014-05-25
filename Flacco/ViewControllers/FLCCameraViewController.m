@@ -8,6 +8,7 @@
 
 #import "FLCCameraViewController.h"
 #import <AVFoundation/AVFoundation.h>
+#import "FLCEditViewController.h"
 
 @interface FLCCameraViewController ()
 
@@ -75,19 +76,12 @@
     });
 }
 
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-    
-    [[UIApplication sharedApplication] setStatusBarHidden:NO];
-}
-
 - (IBAction)closeCamera:(id)sender {
+    [[UIApplication sharedApplication] setStatusBarHidden:NO];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (IBAction)takePicture
-{
+- (IBAction)takePicture {
     AVCaptureConnection* videoConnection = nil;
     for (AVCaptureConnection* connection in self.imageOutput.connections) {
         for (AVCaptureInputPort* port in connection.inputPorts) {
@@ -105,12 +99,10 @@
         NSData* imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageDataSampleBuffer];
 		UIImage* image = [[UIImage alloc] initWithData:imageData];
         
-        NSLog(@"image.size = %f x %f", image.size.width, image.size.height);
+        FLCEditViewController* editViewController = [[FLCEditViewController alloc] initWithImage:image];
+        [self presentViewController:editViewController animated:NO completion:nil];
         
-        CGSize size = CGSizeThatFitsRatio(image.size, 1);
-        NSLog(@"sizeThatFits = %f x %f", size.width, size.height);
-        
-        //UIImage* upImage = [image scaleRotateAndCropImageToFitSize:size];
+        //CGSize size = CGSizeThatFitsRatio(image.size, 1);
     }];
 }
 

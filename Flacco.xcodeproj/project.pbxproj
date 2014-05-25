@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4A35FE876CF8468D861E77F3 /* libPods-Flacco.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12771A352FF840B7B7FC132B /* libPods-Flacco.a */; };
+		68194D8519317BB30007CBC9 /* FLCEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68194D8319317BB30007CBC9 /* FLCEditViewController.m */; };
+		68194D8619317BB30007CBC9 /* FLCEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68194D8419317BB30007CBC9 /* FLCEditViewController.xib */; };
 		6843CC9E19309DF300782634 /* FLCCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843CC9C19309DF300782634 /* FLCCameraViewController.m */; };
 		6843CC9F19309DF300782634 /* FLCCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6843CC9D19309DF300782634 /* FLCCameraViewController.xib */; };
 		68950449192F5B65007AFD75 /* Exo2-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 68950448192F5B65007AFD75 /* Exo2-Regular.otf */; };
@@ -40,6 +42,9 @@
 
 /* Begin PBXFileReference section */
 		12771A352FF840B7B7FC132B /* libPods-Flacco.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Flacco.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68194D8219317BB30007CBC9 /* FLCEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FLCEditViewController.h; path = ViewControllers/FLCEditViewController.h; sourceTree = "<group>"; };
+		68194D8319317BB30007CBC9 /* FLCEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FLCEditViewController.m; path = ViewControllers/FLCEditViewController.m; sourceTree = "<group>"; };
+		68194D8419317BB30007CBC9 /* FLCEditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FLCEditViewController.xib; path = ViewControllers/FLCEditViewController.xib; sourceTree = "<group>"; };
 		6843CC9B19309DF300782634 /* FLCCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FLCCameraViewController.h; path = ViewControllers/FLCCameraViewController.h; sourceTree = "<group>"; };
 		6843CC9C19309DF300782634 /* FLCCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FLCCameraViewController.m; path = ViewControllers/FLCCameraViewController.m; sourceTree = "<group>"; };
 		6843CC9D19309DF300782634 /* FLCCameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FLCCameraViewController.xib; path = ViewControllers/FLCCameraViewController.xib; sourceTree = "<group>"; };
@@ -93,6 +98,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68194D8119317B990007CBC9 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				68194D8219317BB30007CBC9 /* FLCEditViewController.h */,
+				68194D8319317BB30007CBC9 /* FLCEditViewController.m */,
+				68194D8419317BB30007CBC9 /* FLCEditViewController.xib */,
+			);
+			name = Edit;
+			sourceTree = "<group>";
+		};
 		6843CC9A19309D6700782634 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +165,7 @@
 				68B2C404192DF9D700EC1F85 /* FLCAppDelegate.m */,
 				68950447192F5B28007AFD75 /* Fonts */,
 				68B2C429192E241000EC1F85 /* Helpers */,
+				68194D8119317B990007CBC9 /* Edit */,
 				6843CC9A19309D6700782634 /* Camera */,
 				68B2C428192DFAFE00EC1F85 /* Timeline */,
 				68B2C406192DF9D700EC1F85 /* Images.xcassets */,
@@ -286,6 +302,7 @@
 			files = (
 				6843CC9F19309DF300782634 /* FLCCameraViewController.xib in Resources */,
 				68950449192F5B65007AFD75 /* Exo2-Regular.otf in Resources */,
+				68194D8619317BB30007CBC9 /* FLCEditViewController.xib in Resources */,
 				68B2C3FF192DF9D700EC1F85 /* InfoPlist.strings in Resources */,
 				68B2C407192DF9D700EC1F85 /* Images.xcassets in Resources */,
 				68F6F4A5192F7F7400FD5A10 /* FLCTimelineViewController.xib in Resources */,
@@ -340,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68194D8519317BB30007CBC9 /* FLCEditViewController.m in Sources */,
 				68B2C405192DF9D700EC1F85 /* FLCAppDelegate.m in Sources */,
 				68B2C42C192E243100EC1F85 /* GSColor.m in Sources */,
 				6843CC9E19309DF300782634 /* FLCCameraViewController.m in Sources */,
