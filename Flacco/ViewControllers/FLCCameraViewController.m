@@ -102,7 +102,8 @@
         
         // Crop image
         CGSize size = CGSizeThatFitsRatio(image.size, 1);
-        CGRect rect = CGRectMake(400, 0, size.width, size.height);
+        CGFloat offset = (image.size.height-image.size.width)/2; // to get center square of image
+        CGRect rect = CGRectMake(offset, 0, size.width, size.height);
         CGImageRef imageRef = CGImageCreateWithImageInRect([image CGImage], rect);
         UIImage* croppedImage = [UIImage imageWithCGImage:imageRef scale:image.scale orientation:image.imageOrientation];
         CGImageRelease(imageRef);
