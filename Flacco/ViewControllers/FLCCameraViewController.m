@@ -96,13 +96,20 @@
     }
 
     [self.imageOutput captureStillImageAsynchronouslyFromConnection:videoConnection completionHandler:^(CMSampleBufferRef imageDataSampleBuffer, NSError *error) {
+        // Capture image
         NSData* imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageDataSampleBuffer];
 		UIImage* image = [[UIImage alloc] initWithData:imageData];
         
-        FLCEditViewController* editViewController = [[FLCEditViewController alloc] initWithImage:image];
-        [self presentViewController:editViewController animated:NO completion:nil];
+        // Crop image
+        CGSize size = CGSizeThatFitsRatio(image.size, 1);
+        CGRect rect = CGRectMake(400, 0, size.width, size.height);
+        CGImageRef imageRef = CGImageCreateWithImageInRect([image CGImage], rect);
+        UIImage* croppedImage = [UIImage imageWithCGImage:imageRef scale:image.scale orientation:image.imageOrientation];
+        CGImageRelease(imageRef);
         
-        //CGSize size = CGSizeThatFitsRatio(image.size, 1);
+        // Launch editViewController for croppedImage
+        FLCEditViewController* editViewController = [[FLCEditViewController alloc] initWithImage:croppedImage];
+        [self presentViewController:editViewController animated:NO completion:nil];
     }];
 }
 
