@@ -16,6 +16,7 @@
 @property (retain) AVCaptureSession* captureSession;
 @property (retain) AVCaptureDeviceInput* input;
 @property (retain) AVCaptureVideoPreviewLayer* previewLayer;
+@property (retain) AVCaptureStillImageOutput* imageOutput;
 
 @end
 
@@ -54,6 +55,11 @@
     self.previewLayer.frame = self.cameraView.bounds;
     [cameraViewLayer addSublayer:self.previewLayer];
     
+    /* Set up the image output */
+    self.imageOutput = [[AVCaptureStillImageOutput alloc] init];
+    [self.imageOutput setOutputSettings:[[NSDictionary alloc] initWithObjectsAndKeys: AVVideoCodecJPEG, AVVideoCodecKey, nil]];
+    [self.captureSession addOutput:self.imageOutput];
+    
     [self.captureSession startRunning];
 }
 
@@ -78,6 +84,51 @@
 
 - (IBAction)closeCamera:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)takePicture
+{
+    AVCaptureConnection* videoConnection = nil;
+    for (AVCaptureConnection* connection in self.imageOutput.connections) {
+        for (AVCaptureInputPort* port in connection.inputPorts) {
+            if ([port.mediaType isEqual:AVMediaTypeVideo]) {
+                videoConnection = connection;
+                break;
+            }
+        }
+        if (videoConnection) {
+            break;
+        }
+    }
+
+    [self.imageOutput captureStillImageAsynchronouslyFromConnection:videoConnection completionHandler:^(CMSampleBufferRef imageDataSampleBuffer, NSError *error) {
+        NSData* imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageDataSampleBuffer];
+		UIImage* image = [[UIImage alloc] initWithData:imageData];
+        
+        NSLog(@"image.size = %f x %f", image.size.width, image.size.height);
+        
+        CGSize size = CGSizeThatFitsRatio(image.size, 1);
+        NSLog(@"sizeThatFits = %f x %f", size.width, size.height);
+        
+        //UIImage* upImage = [image scaleRotateAndCropImageToFitSize:size];
+    }];
+}
+
+CGSize CGSizeThatFitsRatio(CGSize size, CGFloat ratio){
+    NSInteger ratioHeight = (size.width / ratio);
+    NSInteger ratioWidth = (size.height * ratio);
+    
+    if(ratioHeight - size.height < 0){
+        NSInteger width = size.width;
+        NSInteger height = ratioHeight;
+        size = CGSizeMake( width, height);
+    }else{
+        NSInteger width = ratioWidth;
+        NSInteger height = size.height;
+        size = CGSizeMake( width, height);
+    }
+    
+    return size;
 }
 
 @end
