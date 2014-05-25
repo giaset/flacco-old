@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5E3F500F73BC48578D0D04FE"
+               BlueprintIdentifier = "D5BB739B273E4459AAE49F28"
                BuildableName = "libPods-Flacco.a"
                BlueprintName = "Pods-Flacco"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -3,6 +3,7 @@
 
 target "Flacco" do
   pod 'AMScrollingNavbar', '~> 1.0'
+  pod 'GPUImage', '~> 0.1'
 end
 
 target "FlaccoTests" do
