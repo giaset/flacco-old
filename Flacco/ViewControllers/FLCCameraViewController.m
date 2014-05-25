@@ -13,6 +13,10 @@
 
 @property (weak, nonatomic) IBOutlet UIView *cameraView;
 
+@property (retain) AVCaptureSession* captureSession;
+@property (retain) AVCaptureDeviceInput* input;
+@property (retain) AVCaptureVideoPreviewLayer* previewLayer;
+
 @end
 
 @implementation FLCCameraViewController
@@ -31,26 +35,26 @@
     [super viewDidLoad];
     
     /* Set up the capture session */
-    AVCaptureSession* captureSession = [[AVCaptureSession alloc] init];
-    captureSession.sessionPreset = AVCaptureSessionPresetPhoto;
+    self.captureSession = [[AVCaptureSession alloc] init];
+    self.captureSession.sessionPreset = AVCaptureSessionPresetPhoto;
     
     /* Set up the capture device */
     AVCaptureDevice* device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
     NSError* error = nil;
-    AVCaptureDeviceInput* input = [AVCaptureDeviceInput deviceInputWithDevice:device error:&error];
-    if (!input) {
+    self.input = [AVCaptureDeviceInput deviceInputWithDevice:device error:&error];
+    if (!self.input) {
         // Handle the error appropriately
     }
-    [captureSession addInput:input];
+    [self.captureSession addInput:self.input];
     
     /* Set up the preview layer */
     CALayer* cameraViewLayer = self.cameraView.layer;
-    AVCaptureVideoPreviewLayer* captureVideoPreviewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:captureSession];
-    captureVideoPreviewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
-    captureVideoPreviewLayer.frame = self.cameraView.bounds;
-    [cameraViewLayer addSublayer:captureVideoPreviewLayer];
+    self.previewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:self.captureSession];
+    self.previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
+    self.previewLayer.frame = self.cameraView.bounds;
+    [cameraViewLayer addSublayer:self.previewLayer];
     
-    [captureSession startRunning];
+    [self.captureSession startRunning];
 }
 
 - (void)viewWillAppear:(BOOL)animated
