@@ -100,7 +100,7 @@
 }
 
 - (UIImage*)resizeImage:(UIImage *)image toSize:(CGSize)newSize {
-    UIGraphicsBeginImageContextWithOptions(newSize, NO, 0.0);
+    UIGraphicsBeginImageContextWithOptions(newSize, NO, 1.0); // last param is scale (0.0 to use device's retina/non-retina scale, 1.0 to force exact pixel size)
     [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
     UIImage* newImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
