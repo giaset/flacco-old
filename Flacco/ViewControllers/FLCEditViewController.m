@@ -25,6 +25,10 @@
 {
     self = [super initWithNibName:@"FLCEditViewController" bundle:nil];
     if (self) {
+        if (!image) {
+            return nil;
+        }
+        
         self.image = image;
         self.fileUploadBackgroundTaskId = UIBackgroundTaskInvalid;
         self.photoPostBackgroundTaskId = UIBackgroundTaskInvalid;
@@ -70,8 +74,11 @@
 
 - (BOOL)shouldUploadImage:(UIImage*)image
 {
-    // Get JPEG NSData representation of our image
-    NSData* imageData = UIImageJPEGRepresentation(image, 0.8f);
+    // First resize image
+    UIImage* resizedImage = [self resizeImage:image toSize:CGSizeMake(640, 640)];
+    
+    // Get JPEG NSData representation of our resized image
+    NSData* imageData = UIImageJPEGRepresentation(resizedImage, 0.8f);
     
     if (!imageData) {
         return NO;
@@ -90,6 +97,15 @@
     }];
     
     return YES;
+}
+
+- (UIImage*)resizeImage:(UIImage *)image toSize:(CGSize)newSize {
+    UIGraphicsBeginImageContextWithOptions(newSize, NO, 0.0);
+    [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
+    UIImage* newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return newImage;
 }
 
 @end
