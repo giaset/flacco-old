@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView* imageView;
 @property (nonatomic, strong) PFFile* photoFile;
 @property (nonatomic, assign) UIBackgroundTaskIdentifier fileUploadBackgroundTaskId;
+@property (nonatomic, assign) UIBackgroundTaskIdentifier photoPostBackgroundTaskId;
 
 @end
 
@@ -26,6 +27,7 @@
     if (self) {
         self.image = image;
         self.fileUploadBackgroundTaskId = UIBackgroundTaskInvalid;
+        self.photoPostBackgroundTaskId = UIBackgroundTaskInvalid;
     }
     return self;
 }
@@ -40,6 +42,25 @@
 }
 
 - (IBAction)doneButtonPressed {
+    if (self.photoFile) {
+        // Create a Photo object
+        PFObject* photo = [PFObject objectWithClassName:@"FlaccoPhoto"];
+        [photo setObject:self.photoFile forKey:@"image"];
+        
+        // Request a background execution task to allow us to finish uploading
+        // the photo even if the app is sent to the background
+        self.photoPostBackgroundTaskId = [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:^{
+            [[UIApplication sharedApplication] endBackgroundTask:self.photoPostBackgroundTaskId];
+        }];
+        
+        // Save the Photo PFObject
+        [photo saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+            [[UIApplication sharedApplication] endBackgroundTask:self.photoPostBackgroundTaskId];
+        }];
+        
+        // Dismiss this screen
+        [self.parentViewController dismissViewControllerAnimated:YES completion:nil];
+    }
 }
 
 - (IBAction)backButtonPressed {
