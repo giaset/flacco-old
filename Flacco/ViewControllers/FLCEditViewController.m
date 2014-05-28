@@ -7,11 +7,14 @@
 //
 
 #import "FLCEditViewController.h"
+#import <Parse/Parse.h>
 
 @interface FLCEditViewController ()
 
 @property UIImage* image;
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIImageView* imageView;
+@property (nonatomic, strong) PFFile* photoFile;
+@property (nonatomic, assign) UIBackgroundTaskIdentifier fileUploadBackgroundTaskId;
 
 @end
 
@@ -22,6 +25,7 @@
     self = [super initWithNibName:@"FLCEditViewController" bundle:nil];
     if (self) {
         self.image = image;
+        self.fileUploadBackgroundTaskId = UIBackgroundTaskInvalid;
     }
     return self;
 }
@@ -31,10 +35,36 @@
     [super viewDidLoad];
     
     self.imageView.image = self.image;
+    
+    [self shouldUploadImage:self.image];
 }
 
 - (IBAction)backButtonPressed {
     [self dismissViewControllerAnimated:NO completion:nil];
+}
+
+- (BOOL)shouldUploadImage:(UIImage*)image
+{
+    // Get JPEG NSData representation of our image
+    NSData* imageData = UIImageJPEGRepresentation(image, 0.8f);
+    
+    if (!imageData) {
+        return NO;
+    }
+    
+    // Create the PFFile and store it in a property since we'll need it later
+    self.photoFile = [PFFile fileWithData:imageData];
+    
+    // Request a background execution task to allow us to finish uploading the photo even if the application is backgrounded
+    self.fileUploadBackgroundTaskId = [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:^{
+        [[UIApplication sharedApplication] endBackgroundTask:self.fileUploadBackgroundTaskId];
+    }];
+    
+    [self.photoFile saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        [[UIApplication sharedApplication] endBackgroundTask:self.fileUploadBackgroundTaskId];
+    }];
+    
+    return YES;
 }
 
 @end
