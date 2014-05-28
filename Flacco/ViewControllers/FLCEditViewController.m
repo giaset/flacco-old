@@ -39,6 +39,9 @@
     [self shouldUploadImage:self.image];
 }
 
+- (IBAction)doneButtonPressed {
+}
+
 - (IBAction)backButtonPressed {
     [self dismissViewControllerAnimated:NO completion:nil];
 }
