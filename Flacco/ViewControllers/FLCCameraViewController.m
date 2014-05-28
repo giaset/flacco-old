@@ -110,7 +110,7 @@
         
         // Launch editViewController for croppedImage
         FLCEditViewController* editViewController = [[FLCEditViewController alloc] initWithImage:croppedImage];
-        [self presentViewController:editViewController animated:NO completion:nil];
+        [self.navigationController pushViewController:editViewController animated:NO];
     }];
 }
 

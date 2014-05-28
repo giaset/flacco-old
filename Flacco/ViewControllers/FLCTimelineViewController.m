@@ -48,8 +48,9 @@
 - (IBAction)addMealButtonClicked
 {
     FLCCameraViewController* cameraViewController = [[FLCCameraViewController alloc] init];
-    //cameraViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-    [self presentViewController:cameraViewController animated:YES completion:nil];
+    UINavigationController* cameraNavController = [[UINavigationController alloc] initWithRootViewController:cameraViewController];
+    cameraNavController.navigationBarHidden = YES;
+    [self presentViewController:cameraNavController animated:YES completion:nil];
 }
 
 #pragma mark - Table view data source

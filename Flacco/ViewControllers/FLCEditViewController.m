@@ -59,12 +59,13 @@
         }];
         
         // Dismiss this screen
-        [self.parentViewController dismissViewControllerAnimated:YES completion:nil];
+        [[UIApplication sharedApplication] setStatusBarHidden:NO];
+        [self dismissViewControllerAnimated:YES completion:nil];
     }
 }
 
 - (IBAction)backButtonPressed {
-    [self dismissViewControllerAnimated:NO completion:nil];
+    [self.navigationController popViewControllerAnimated:NO];
 }
 
 - (BOOL)shouldUploadImage:(UIImage*)image
