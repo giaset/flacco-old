@@ -9,11 +9,16 @@
 #import "FLCAppDelegate.h"
 #import "FLCTimelineViewController.h"
 #import "GSColor.h"
+#import <Parse/Parse.h>
 
 @implementation FLCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // Parse
+    [Parse setApplicationId:@"BZfAoL6099iLJQpcD8dqEQL32slvnJYebUCw3MQf" clientKey:@"e1h1pqvrKZzj9lh1DFVLdemqFWd1HMVrAkIdqU5f"];
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
     // Style the navBar
     [UINavigationBar appearance].barTintColor = [GSColor purple];
     [UINavigationBar appearance].tintColor = [UIColor whiteColor];
