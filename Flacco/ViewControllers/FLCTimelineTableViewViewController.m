@@ -8,6 +8,7 @@
 
 #import "FLCTimelineTableViewViewController.h"
 #import "FLCCameraViewController.h"
+#import "FLCPhotoTableViewCell.h"
 
 @interface FLCTimelineTableViewViewController ()
 
@@ -66,23 +67,24 @@
     return 1;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (PFTableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath object:(PFObject *)object
 {
     static NSString* CellIdentifier = @"Cell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    FLCPhotoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-        // put a PFImageView in the cell
+        cell = [[FLCPhotoTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
     // Configure the cell...
-    cell.backgroundColor = [UIColor lightGrayColor];
-    //set the imageView.file
-    /*if ([cell.imageView.file isDataAvailable]) {
-     [cell.imageView loadInBackground];
-     }*/
+    cell.photoView.backgroundColor = [UIColor redColor];
+    cell.photoView.file = [object objectForKey:@"image"];
+    
+    // PFQTVC will take care of asynchronously downloading files, but will only load them when the tableview is not moving. If the data is there, let's load it right away.
+    if ([cell.photoView.file isDataAvailable]) {
+     [cell.photoView loadInBackground];
+     }
     
     return cell;
 }

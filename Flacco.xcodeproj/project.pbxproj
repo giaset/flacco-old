@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4A35FE876CF8468D861E77F3 /* libPods-Flacco.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12771A352FF840B7B7FC132B /* libPods-Flacco.a */; };
 		68167DFD193741CF004564C4 /* FLCTimelineTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68167DFC193741CF004564C4 /* FLCTimelineTableViewViewController.m */; };
+		68167E0819375246004564C4 /* FLCPhotoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68167E0719375246004564C4 /* FLCPhotoTableViewCell.m */; };
 		68194D8519317BB30007CBC9 /* FLCEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68194D8319317BB30007CBC9 /* FLCEditViewController.m */; };
 		68194D8619317BB30007CBC9 /* FLCEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68194D8419317BB30007CBC9 /* FLCEditViewController.xib */; };
 		6843CC9E19309DF300782634 /* FLCCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6843CC9C19309DF300782634 /* FLCCameraViewController.m */; };
@@ -56,6 +57,8 @@
 		12771A352FF840B7B7FC132B /* libPods-Flacco.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Flacco.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68167DFB193741CF004564C4 /* FLCTimelineTableViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FLCTimelineTableViewViewController.h; path = ViewControllers/FLCTimelineTableViewViewController.h; sourceTree = "<group>"; };
 		68167DFC193741CF004564C4 /* FLCTimelineTableViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FLCTimelineTableViewViewController.m; path = ViewControllers/FLCTimelineTableViewViewController.m; sourceTree = "<group>"; };
+		68167E0619375246004564C4 /* FLCPhotoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FLCPhotoTableViewCell.h; path = Views/FLCPhotoTableViewCell.h; sourceTree = "<group>"; };
+		68167E0719375246004564C4 /* FLCPhotoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FLCPhotoTableViewCell.m; path = Views/FLCPhotoTableViewCell.m; sourceTree = "<group>"; };
 		68194D8219317BB30007CBC9 /* FLCEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FLCEditViewController.h; path = ViewControllers/FLCEditViewController.h; sourceTree = "<group>"; };
 		68194D8319317BB30007CBC9 /* FLCEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FLCEditViewController.m; path = ViewControllers/FLCEditViewController.m; sourceTree = "<group>"; };
 		68194D8419317BB30007CBC9 /* FLCEditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FLCEditViewController.xib; path = ViewControllers/FLCEditViewController.xib; sourceTree = "<group>"; };
@@ -145,6 +148,23 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		68167DFF19374CC3004564C4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				68167E0019374CCD004564C4 /* Photo Cell */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		68167E0019374CCD004564C4 /* Photo Cell */ = {
+			isa = PBXGroup;
+			children = (
+				68167E0619375246004564C4 /* FLCPhotoTableViewCell.h */,
+				68167E0719375246004564C4 /* FLCPhotoTableViewCell.m */,
+			);
+			name = "Photo Cell";
+			sourceTree = "<group>";
+		};
 		68194D8119317B990007CBC9 /* Edit */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +245,7 @@
 				68B2C404192DF9D700EC1F85 /* FLCAppDelegate.m */,
 				68950447192F5B28007AFD75 /* Fonts */,
 				68B2C429192E241000EC1F85 /* Helpers */,
+				68167DFF19374CC3004564C4 /* Views */,
 				68167DFE19374912004564C4 /* Controllers */,
 				68B2C406192DF9D700EC1F85 /* Images.xcassets */,
 				68B2C3FB192DF9D700EC1F85 /* Supporting Files */,
@@ -419,6 +440,7 @@
 				6843CC9E19309DF300782634 /* FLCCameraViewController.m in Sources */,
 				68167DFD193741CF004564C4 /* FLCTimelineTableViewViewController.m in Sources */,
 				68B2C401192DF9D700EC1F85 /* main.m in Sources */,
+				68167E0819375246004564C4 /* FLCPhotoTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
