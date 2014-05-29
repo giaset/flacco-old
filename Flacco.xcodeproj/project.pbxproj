@@ -135,6 +135,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68167DFE19374912004564C4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6843CC9A19309D6700782634 /* Camera */,
+				68194D8119317B990007CBC9 /* Edit */,
+				68B2C428192DFAFE00EC1F85 /* Timeline */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		68194D8119317B990007CBC9 /* Edit */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,9 +225,7 @@
 				68B2C404192DF9D700EC1F85 /* FLCAppDelegate.m */,
 				68950447192F5B28007AFD75 /* Fonts */,
 				68B2C429192E241000EC1F85 /* Helpers */,
-				68194D8119317B990007CBC9 /* Edit */,
-				6843CC9A19309D6700782634 /* Camera */,
-				68B2C428192DFAFE00EC1F85 /* Timeline */,
+				68167DFE19374912004564C4 /* Controllers */,
 				68B2C406192DF9D700EC1F85 /* Images.xcassets */,
 				68B2C3FB192DF9D700EC1F85 /* Supporting Files */,
 			);
