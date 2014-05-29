@@ -1,30 +1,26 @@
 //
-//  FLCTimelineViewController.m
+//  FLCTimelineTableViewViewController.m
 //  Flacco
 //
-//  Created by Gianni Settino on 2014-05-23.
+//  Created by Gianni Settino on 2014-05-29.
 //  Copyright (c) 2014 Milton and Parc. All rights reserved.
 //
 
-#import "FLCTimelineViewController.h"
-#import <UIViewController+ScrollingNavbar.h>
+#import "FLCTimelineTableViewViewController.h"
 #import "FLCCameraViewController.h"
-#import <Parse/Parse.h>
 
-@interface FLCTimelineViewController ()
-
-@property (weak, nonatomic) IBOutlet UITableView* tableView;
-@property (nonatomic, retain) NSArray* objects;
+@interface FLCTimelineTableViewViewController ()
 
 @end
 
-@implementation FLCTimelineViewController
+@implementation FLCTimelineTableViewViewController
 
 - (id)init
 {
-    self = [super initWithNibName:@"FLCTimelineViewController" bundle:nil];
+    self = [super init];
     if (self) {
         self.title = @"flacco";
+        self.parseClassName = @"FlaccoPhoto";
     }
     return self;
 }
@@ -36,21 +32,6 @@
     // Set up rightBarButton to launch camera
     UIBarButtonItem* addMealButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:self action:@selector(addMealButtonClicked)];
     self.navigationItem.rightBarButtonItem = addMealButton;
-    
-    // Bind the disappearing navbar to user's scrolls
-    //[self followScrollView:self.tableView];
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    [self loadObjects];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-    [self showNavBarAnimated:NO];
 }
 
 - (IBAction)addMealButtonClicked
@@ -70,12 +51,9 @@
     return photosQuery;
 }
 
-- (void)loadObjects
+- (PFObject*)objectAtIndexPath:(NSIndexPath *)indexPath
 {
-    [[self queryForTable] findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        self.objects = objects;
-        [self.tableView reloadData];
-    }];
+    return [self.objects objectAtIndex:indexPath.section];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -96,10 +74,15 @@
     
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        // put a PFImageView in the cell
     }
     
     // Configure the cell...
     cell.backgroundColor = [UIColor lightGrayColor];
+    //set the imageView.file
+    /*if ([cell.imageView.file isDataAvailable]) {
+     [cell.imageView loadInBackground];
+     }*/
     
     return cell;
 }
