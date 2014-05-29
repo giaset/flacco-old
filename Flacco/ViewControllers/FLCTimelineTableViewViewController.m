@@ -78,7 +78,6 @@
     }
     
     // Configure the cell...
-    cell.photoView.backgroundColor = [UIColor redColor];
     cell.photoView.file = [object objectForKey:@"image"];
     
     // PFQTVC will take care of asynchronously downloading files, but will only load them when the tableview is not moving. If the data is there, let's load it right away.

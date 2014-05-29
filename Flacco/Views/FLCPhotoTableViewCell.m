@@ -14,7 +14,8 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        // Initialization code
+        self.photoView = [[PFImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 320)];
+        [self addSubview:self.photoView];
     }
     return self;
 }
