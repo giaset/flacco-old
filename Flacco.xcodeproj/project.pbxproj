@@ -40,8 +40,6 @@
 		68B2C418192DF9D700EC1F85 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68B2C416192DF9D700EC1F85 /* InfoPlist.strings */; };
 		68B2C41A192DF9D700EC1F85 /* FlaccoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B2C419192DF9D700EC1F85 /* FlaccoTests.m */; };
 		68B2C42C192E243100EC1F85 /* GSColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B2C42B192E243100EC1F85 /* GSColor.m */; };
-		68F6F4A4192F7F7400FD5A10 /* FLCTimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F6F4A2192F7F7400FD5A10 /* FLCTimelineViewController.m */; };
-		68F6F4A5192F7F7400FD5A10 /* FLCTimelineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68F6F4A3192F7F7400FD5A10 /* FLCTimelineViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,9 +94,6 @@
 		68B2C419192DF9D700EC1F85 /* FlaccoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlaccoTests.m; sourceTree = "<group>"; };
 		68B2C42A192E243100EC1F85 /* GSColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSColor.h; path = Helpers/GSColor.h; sourceTree = "<group>"; };
 		68B2C42B192E243100EC1F85 /* GSColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSColor.m; path = Helpers/GSColor.m; sourceTree = "<group>"; };
-		68F6F4A1192F7F7400FD5A10 /* FLCTimelineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FLCTimelineViewController.h; path = ViewControllers/FLCTimelineViewController.h; sourceTree = "<group>"; };
-		68F6F4A2192F7F7400FD5A10 /* FLCTimelineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FLCTimelineViewController.m; path = ViewControllers/FLCTimelineViewController.m; sourceTree = "<group>"; };
-		68F6F4A3192F7F7400FD5A10 /* FLCTimelineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FLCTimelineViewController.xib; path = ViewControllers/FLCTimelineViewController.xib; sourceTree = "<group>"; };
 		C555FFDB4F0C4B958121E805 /* Pods-Flacco.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flacco.xcconfig"; path = "Pods/Pods-Flacco.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -261,9 +256,6 @@
 		68B2C428192DFAFE00EC1F85 /* Timeline */ = {
 			isa = PBXGroup;
 			children = (
-				68F6F4A1192F7F7400FD5A10 /* FLCTimelineViewController.h */,
-				68F6F4A2192F7F7400FD5A10 /* FLCTimelineViewController.m */,
-				68F6F4A3192F7F7400FD5A10 /* FLCTimelineViewController.xib */,
 				68167DFB193741CF004564C4 /* FLCTimelineTableViewViewController.h */,
 				68167DFC193741CF004564C4 /* FLCTimelineTableViewViewController.m */,
 			);
@@ -362,7 +354,6 @@
 				68194D8619317BB30007CBC9 /* FLCEditViewController.xib in Resources */,
 				68B2C3FF192DF9D700EC1F85 /* InfoPlist.strings in Resources */,
 				68B2C407192DF9D700EC1F85 /* Images.xcassets in Resources */,
-				68F6F4A5192F7F7400FD5A10 /* FLCTimelineViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,7 +410,6 @@
 				68B2C42C192E243100EC1F85 /* GSColor.m in Sources */,
 				6843CC9E19309DF300782634 /* FLCCameraViewController.m in Sources */,
 				68167DFD193741CF004564C4 /* FLCTimelineTableViewViewController.m in Sources */,
-				68F6F4A4192F7F7400FD5A10 /* FLCTimelineViewController.m in Sources */,
 				68B2C401192DF9D700EC1F85 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
